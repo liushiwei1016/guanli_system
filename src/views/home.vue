@@ -28,11 +28,13 @@
       Header_top,
       Sidebar
     },
+	
     data() {
       return {
         isCollapse: false
       }
     },
+	
     mounted() {
       window.onresize = () => {
         var clientWidth = document.body.clientWidth;
