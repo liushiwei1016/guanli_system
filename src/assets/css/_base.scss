@@ -1,0 +1,84 @@
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*Set text size ratio 10px/16px, the default text size & font-family*/
+
+body {
+  font-family: "微软雅黑", "宋体", Georgia, "Times New Roman", Times, serif, "Micosoft Yahei";
+  vertical-align: middle;
+}
+
+/*Set the title text font-family*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Microsoft YaHei", "SimHei";
+  font-weight: normal;
+}
+
+/*Set list item symbol for none*/
+ul, ol {
+  list-style: none;
+}
+
+/*Set the picture and fieldset border to 0*/
+img, fieldset {
+  border: 0;
+}
+
+/* Set the max-width of 100% */
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto \9
+; /* ie8 */
+}
+
+/*Set the form element and the image alignment method*/
+input, textarea, img {
+  vertical-align: middle;
+}
+
+/*Clear hyperlink underline*/
+a {
+  text-decoration: none;
+  collapse: #2a2a2a;
+}
+
+i {
+  font-style: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*Cancel the outer border of the text box*/
+input:focus {
+  outline: none;
+}
+
+
+/*Clear float*/
+.clearfix:after {
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}

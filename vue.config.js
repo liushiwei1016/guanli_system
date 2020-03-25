@@ -1,0 +1,15 @@
+module.exports={
+  configureWebpack:{
+    resolve:{
+      alias:{
+        'css':'@/assets/css',
+        'img':'@/assets/img',
+        'js':'@/assets/js',
+        'content':'@/components/content',
+        'common':'@/components/common',
+        'views':'@/views',
+        'network':'@/network'
+      }
+    }
+  }
+};
