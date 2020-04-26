@@ -119,7 +119,6 @@
                  */
                 this.$router.push('/home');
               }
-              console.log(res);
             }).catch(err => {
               console.log(err);
             })

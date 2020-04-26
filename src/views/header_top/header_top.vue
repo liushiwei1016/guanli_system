@@ -4,7 +4,7 @@
          <i v-if="isCollapse" class="el-icon-s-unfold"></i>
          <i v-else class="el-icon-s-fold"></i>
       </div>
-      <el-button type="primary" @click="logoutClick">退出</el-button>
+      <el-button type="primary" size="mini" @click="logoutClick">退出</el-button>
    </div>
 </template>
 

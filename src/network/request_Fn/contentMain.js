@@ -308,6 +308,20 @@ export function removeParamsList(id, attrId) {
   return $axios({
     url: `categories/${id}/attributes/${attrId}`,
     method: 'delete',
+    
+  })
+}
 
+
+//Tag标签编辑提交参数
+export function addTagParamsData(id, attrId, attr_name, attr_sel, attr_vals) {
+  return $axios({
+    url: `categories/${id}/attributes/${attrId}`,
+    method: 'put',
+    data: {
+      attr_name,
+      attr_sel,
+      attr_vals
+    }
   })
 }

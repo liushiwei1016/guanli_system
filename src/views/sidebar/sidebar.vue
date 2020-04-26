@@ -119,7 +119,7 @@
    }
 
    .el-menu-vertical-demo:not(.el-menu--collapse) {
-      width: 250px;
+      width: 220px;
       min-height: 100%;
    }
 

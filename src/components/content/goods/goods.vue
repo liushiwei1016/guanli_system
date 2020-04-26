@@ -101,7 +101,6 @@
     methods: {
       getGoodsList() {
         getGoodsListData(this.query, this.pagenum, this.pagesize).then(res => {
-          console.log(res);
           if (res.meta.status === 200) {
             this.goodsList = res.data.goods;
             this.total = res.data.total;

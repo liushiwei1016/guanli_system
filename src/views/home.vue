@@ -5,7 +5,7 @@
             <sidebar :isCollapse="isCollapse"></sidebar>
          </el-aside>
          <el-container>
-            <el-header>
+            <el-header height="50px">
                <header_top :isCollapse="isCollapse" @CollapseClick="CollapseClick"></header_top>
             </el-header>
             <el-main>
