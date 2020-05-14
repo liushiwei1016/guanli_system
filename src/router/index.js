@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-
 Vue.use(VueRouter);
 
 const routes = [
@@ -12,58 +11,58 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: () => import('content/login/login')
+    component: () => import(/* webpackChunkName: "login_home" */ 'content/login/login')
   },
   {
     path: '/home',
     name: 'home',
-    component: () => import('views/home'),
+    component: () => import(/* webpackChunkName: "login_home" */ 'views/home'),
     redirect: "/users",
     children: [
       {
         path: '/users',
         name: 'users',
-        component: () => import('content/users/users')
+        component: () => import(/* webpackChunkName: "Foo_0" */ 'content/users/users')
       },
       {
         path: '/roles',
         name: 'roles',
-        component: () => import('content/roles/roles')
+        component: () => import(/* webpackChunkName: "Foo_0" */'content/roles/roles')
       },
       {
         path: '/rights',
         name: 'rights',
-        component: () => import('content/rights/rights')
+        component: () => import(/* webpackChunkName: "Foo_0" */'content/rights/rights')
       },
       {
         path: '/reports',
         name: 'reports',
-        component: () => import('content/reports/reports')
+        component: () => import(/* webpackChunkName: "Foo_1" */'content/reports/reports')
       },
       {
         path: '/params',
         name: 'params',
-        component: () => import('content/params/params')
+        component: () => import(/* webpackChunkName: "Foo_1" */'content/params/params')
       },
       {
         path: '/orders',
         name: 'orders',
-        component: () => import('content/orders/orders')
+        component: () => import(/* webpackChunkName: "Foo_1" */'content/orders/orders')
       },
       {
         path: '/goods',
         name: 'goods',
-        component: () => import('content/goods/goods'),
+        component: () => import(/* webpackChunkName: "FooFoo_2" */'content/goods/goods'),
       },
       {
-        path:'/addGoods',
-        name:'addGoods',
-        component:()=>import('content/goods/addGoods/addGoods')
+        path: '/addGoods',
+        name: 'addGoods',
+        component: () => import(/* webpackChunkName: "FooFoo_2" */'content/goods/addGoods/addGoods')
       },
       {
         path: '/categories',
         name: 'categories',
-        component: () => import('content/categories/categories')
+        component: () => import(/* webpackChunkName: "FooFoo_2" */'content/categories/categories')
       }
     ]
   }

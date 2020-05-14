@@ -189,6 +189,15 @@ export function removeGoods(id) {
   })
 }
 
+//添加商品
+export function addGoos(fromData) {
+  return $axios({
+    url: 'goods',
+    method: 'post',
+    data: fromData
+  })
+}
+
 /*****************************商品管理，商品分类相关接口**************************/
 //获取商品分类数据列表
 export function getGoodCateGoriesData(type, pagenum, pagesize) {
@@ -322,6 +331,28 @@ export function addTagParamsData(id, attrId, attr_name, attr_sel, attr_vals) {
       attr_name,
       attr_sel,
       attr_vals
+    }
+  })
+}
+
+
+/*****************************订单管理，订单列表相关接口**************************/
+//获取订单列表数据
+export function getOrdersData(ordersInfo) {
+  return $axios({
+    url:'orders',
+    method:'get',
+    params:ordersInfo
+  })
+}
+
+//查看物流信息
+export function getWuliuInfo(id) {
+  return $axios({
+    url:`/kuaidi/${id}`,
+    method:'get',
+    params:{
+      id
     }
   })
 }

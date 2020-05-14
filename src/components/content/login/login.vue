@@ -138,6 +138,7 @@
       height: 100%;
       background: url("~img/login-bg.png") no-repeat;
       position: relative;
+      background-size: cover;
 
       .login_box {
          width: 350px;
